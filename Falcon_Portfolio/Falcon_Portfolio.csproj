@@ -1,0 +1,351 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EEB2FE4-D706-41E4-B5EF-624017F69C50}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Falcon_Portfolio</RootNamespace>
+    <AssemblyName>Falcon_Portfolio</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44335</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\colors.css" />
+    <Content Include="assets\css\colors\blue-munsel.css" />
+    <Content Include="assets\css\colors\blue-munsell.css" />
+    <Content Include="assets\css\colors\blue.css" />
+    <Content Include="assets\css\colors\defauld.css" />
+    <Content Include="assets\css\colors\green.css" />
+    <Content Include="assets\css\colors\orange.css" />
+    <Content Include="assets\css\colors\purple.css" />
+    <Content Include="assets\css\colors\red.css" />
+    <Content Include="assets\css\colors\slate.css" />
+    <Content Include="assets\css\colors\yellow.css" />
+    <Content Include="assets\css\css-tree.css" />
+    <Content Include="assets\css\default-css.css" />
+    <Content Include="assets\css\prism.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\styles.css" />
+    <Content Include="assets\css\variable.css" />
+    <Content Include="assets\icons\flat\Flaticon.svg" />
+    <Content Include="assets\icons\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="assets\icons\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="assets\icons\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\icons\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\font-awesome.css" />
+    <Content Include="assets\icons\wall-clock.svg" />
+    <Content Include="assets\images\ab-img.png" />
+    <Content Include="assets\images\apple-icon-114x114.png" />
+    <Content Include="assets\images\apple-icon-72x72.png" />
+    <Content Include="assets\images\apple-icon.png" />
+    <Content Include="assets\images\b-1.png" />
+    <Content Include="assets\images\b-2.png" />
+    <Content Include="assets\images\b-3.png" />
+    <Content Include="assets\images\b-author.jpg" />
+    <Content Include="assets\images\blog.png" />
+    <Content Include="assets\images\bug_tracker.png" />
+    <Content Include="assets\images\c-1.png" />
+    <Content Include="assets\images\cb.jpg" />
+    <Content Include="assets\images\extra-feature-bg.jpg" />
+    <Content Include="assets\images\favicon-16x16.png" />
+    <Content Include="assets\images\favicon.png" />
+    <Content Include="assets\images\fedalon_logo.png" />
+    <Content Include="assets\images\footer-bg.png" />
+    <Content Include="assets\images\h1.png" />
+    <Content Include="assets\images\h1w.png" />
+    <Content Include="assets\images\h2.png" />
+    <Content Include="assets\images\h2w.png" />
+    <Content Include="assets\images\h3.png" />
+    <Content Include="assets\images\h3w.png" />
+    <Content Include="assets\images\header-bg-2.png" />
+    <Content Include="assets\images\hero-2.jpg" />
+    <Content Include="assets\images\hero.jpg" />
+    <Content Include="assets\images\home-bg-img.jpg" />
+    <Content Include="assets\images\map-color-overlay.png" />
+    <Content Include="assets\images\ndc.jpg" />
+    <Content Include="assets\images\ov-img-2.png" />
+    <Content Include="assets\images\overlay-img-1.png" />
+    <Content Include="assets\images\overlay-img-2.png" />
+    <Content Include="assets\images\p-1.png" />
+    <Content Include="assets\images\p-2.png" />
+    <Content Include="assets\images\p-3.png" />
+    <Content Include="assets\images\p-4.png" />
+    <Content Include="assets\images\p-5.png" />
+    <Content Include="assets\images\p-6.png" />
+    <Content Include="assets\images\p-7.png" />
+    <Content Include="assets\images\p-8.png" />
+    <Content Include="assets\images\p1.jpg" />
+    <Content Include="assets\images\p2.jpg" />
+    <Content Include="assets\images\portfolio\csharp.png" />
+    <Content Include="assets\images\portfolio\FizzBuzz.jpg" />
+    <Content Include="assets\images\portfolio\g1.jpg" />
+    <Content Include="assets\images\portfolio\g2.png" />
+    <Content Include="assets\images\portfolio\g3.png" />
+    <Content Include="assets\images\portfolio\g4.png" />
+    <Content Include="assets\images\portfolio\g5.png" />
+    <Content Include="assets\images\portfolio\g6.png" />
+    <Content Include="assets\images\portfolio\g7.jpg" />
+    <Content Include="assets\images\portfolio\g8.png" />
+    <Content Include="assets\images\portfolio\g9.png" />
+    <Content Include="assets\images\portfolio\p1.jpg" />
+    <Content Include="assets\images\portfolio\p2.jpg" />
+    <Content Include="assets\images\portfolio\profile.png" />
+    <Content Include="assets\images\portfolio\sql.png" />
+    <Content Include="assets\images\portfolio\sumofallfears.png" />
+    <Content Include="assets\images\portfolio\sunsethills.png" />
+    <Content Include="assets\images\portfolio\tacocat.png" />
+    <Content Include="assets\images\portfolio\w1.jpg" />
+    <Content Include="assets\images\portfolio\w2.jpg" />
+    <Content Include="assets\images\portfolio\w3.jpg" />
+    <Content Include="assets\images\portfolio\w4.jpg" />
+    <Content Include="assets\images\portfolio\w5.jpg" />
+    <Content Include="assets\images\portfolio\w6.jpg" />
+    <Content Include="assets\images\slider\1.jpg" />
+    <Content Include="assets\images\slider\2.jpg" />
+    <Content Include="assets\images\slider\3.jpg" />
+    <Content Include="assets\images\slider\4.jpg" />
+    <Content Include="assets\images\slider\5.jpg" />
+    <Content Include="assets\images\slider\6.jpg" />
+    <Content Include="assets\images\slider\status.gif" />
+    <Content Include="assets\images\smartwatch-overlay.png" />
+    <Content Include="assets\images\u1.jpg" />
+    <Content Include="assets\images\w1.jpg" />
+    <Content Include="assets\images\w2.jpg" />
+    <Content Include="assets\images\w3.jpg" />
+    <Content Include="assets\images\w4.jpg" />
+    <Content Include="assets\images\w5.jpg" />
+    <Content Include="assets\js\custom-scripts.css" />
+    <Content Include="assets\js\custom-scripts.js" />
+    <Content Include="assets\js\fizzbuzz.js" />
+    <Content Include="assets\js\prism.js" />
+    <Content Include="assets\js\sumofallfears.js" />
+    <Content Include="assets\js\sunsethills.js" />
+    <Content Include="assets\js\tacocat.js" />
+    <Content Include="assets\plugins\css\animate.css" />
+    <Content Include="assets\plugins\css\aos.css" />
+    <Content Include="assets\plugins\css\bootstrap.min.css" />
+    <Content Include="assets\plugins\css\jquery.fancybox.min.css" />
+    <Content Include="assets\plugins\css\mh-slider.css" />
+    <Content Include="assets\plugins\css\owl.css" />
+    <Content Include="assets\plugins\js\aos.js" />
+    <Content Include="assets\plugins\js\bootstrap.min.js" />
+    <Content Include="assets\plugins\js\circle-progress.js" />
+    <Content Include="assets\plugins\js\isotope.pkgd.js" />
+    <Content Include="assets\plugins\js\jquery-3.3.1.min.js" />
+    <Content Include="assets\plugins\js\jquery-slim.min.js" />
+    <Content Include="assets\plugins\js\jquery.fancybox.min.js" />
+    <Content Include="assets\plugins\js\jquery.min.js" />
+    <Content Include="assets\plugins\js\jquery.mixitup.min.js" />
+    <Content Include="assets\plugins\js\jquery.nav.js" />
+    <Content Include="assets\plugins\js\owl.carousel.js" />
+    <Content Include="assets\plugins\js\packery-mode.pkgd.js" />
+    <Content Include="assets\plugins\js\popper.min.js" />
+    <Content Include="assets\plugins\js\screenslider.js" />
+    <Content Include="assets\plugins\js\validator.min.js" />
+    <Content Include="assets\plugins\js\wow.min.js" />
+    <Content Include="index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\blue-munsel.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\blue-munsell.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\blue.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\colors.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\css-tree.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\default-css.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\functions.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\green.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\orange.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\purple.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\red.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\responsive.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\slate.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\styles.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\variable.scssc" />
+    <Content Include="assets\css\.sass-cache\e48633bf23e057555d77865c55551caed2a3472d\yellow.scssc" />
+    <Content Include="assets\css\colors.css.map" />
+    <Content Include="assets\css\colors.scss" />
+    <Content Include="assets\css\colors\.sass-cache\084120a613d16ccfa2bb0f5584cf5264b7cc85ae\blue-munsell.scssc" />
+    <Content Include="assets\css\colors\.sass-cache\084120a613d16ccfa2bb0f5584cf5264b7cc85ae\blue.scssc" />
+    <Content Include="assets\css\colors\.sass-cache\084120a613d16ccfa2bb0f5584cf5264b7cc85ae\green.scssc" />
+    <Content Include="assets\css\colors\.sass-cache\084120a613d16ccfa2bb0f5584cf5264b7cc85ae\orange.scssc" />
+    <Content Include="assets\css\colors\.sass-cache\084120a613d16ccfa2bb0f5584cf5264b7cc85ae\purple.scssc" />
+    <Content Include="assets\css\colors\.sass-cache\084120a613d16ccfa2bb0f5584cf5264b7cc85ae\red.scssc" />
+    <Content Include="assets\css\colors\.sass-cache\084120a613d16ccfa2bb0f5584cf5264b7cc85ae\slate.scssc" />
+    <Content Include="assets\css\colors\.sass-cache\084120a613d16ccfa2bb0f5584cf5264b7cc85ae\yellow.scssc" />
+    <Content Include="assets\css\colors\blue-munsel.css.map" />
+    <Content Include="assets\css\colors\blue-munsell.css.map" />
+    <Content Include="assets\css\colors\blue-munsell.scss" />
+    <Content Include="assets\css\colors\blue.css.map" />
+    <Content Include="assets\css\colors\blue.scss" />
+    <Content Include="assets\css\colors\green.css.map" />
+    <Content Include="assets\css\colors\green.scss" />
+    <Content Include="assets\css\colors\orange.css.map" />
+    <Content Include="assets\css\colors\orange.scss" />
+    <Content Include="assets\css\colors\purple.css.map" />
+    <Content Include="assets\css\colors\purple.scss" />
+    <Content Include="assets\css\colors\red.css.map" />
+    <Content Include="assets\css\colors\red.scss" />
+    <Content Include="assets\css\colors\slate.css.map" />
+    <Content Include="assets\css\colors\slate.scss" />
+    <Content Include="assets\css\colors\yellow.css.map" />
+    <Content Include="assets\css\colors\yellow.scss" />
+    <Content Include="assets\css\css-tree.css.map" />
+    <Content Include="assets\css\css-tree.scss" />
+    <Content Include="assets\css\default-css.scss" />
+    <Content Include="assets\css\functions.scss" />
+    <Content Include="assets\css\responsive.css.map" />
+    <Content Include="assets\css\responsive.scss" />
+    <Content Include="assets\css\styles.css.map" />
+    <Content Include="assets\css\styles.scss" />
+    <Content Include="assets\css\variable.css.map" />
+    <Content Include="assets\css\variable.scss" />
+    <Content Include="assets\icons\flat\Flaticon.ttf" />
+    <Content Include="assets\icons\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\icons\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\icons\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\icons\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\icons\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\core.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\list.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\path.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\font-awesome.css.map" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="assets\icons\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="assets\images\Untitled" />
+    <Content Include="assets\js\.sass-cache\b51934881f91a9f420bebd25424668293a474a66\custom-scripts.jsc" />
+    <Content Include="assets\js\custom-scripts.css.map" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\joshcasteelportfolio - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\video\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60207</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44335/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
