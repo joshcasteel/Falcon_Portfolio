@@ -107,6 +107,8 @@
     <Content Include="assets\images\favicon-16x16.png" />
     <Content Include="assets\images\favicon.png" />
     <Content Include="assets\images\fedalon_logo.png" />
+    <Content Include="assets\images\finance.png" />
+    <Content Include="assets\images\financeapi.png" />
     <Content Include="assets\images\footer-bg.png" />
     <Content Include="assets\images\h1.png" />
     <Content Include="assets\images\h1w.png" />
