@@ -300,6 +300,7 @@
     <Content Include="assets\images\Untitled" />
     <Content Include="assets\js\.sass-cache\b51934881f91a9f420bebd25424668293a474a66\custom-scripts.jsc" />
     <Content Include="assets\js\custom-scripts.css.map" />
+    <Content Include="assets\files\Joshua_Casteel.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\joshcasteelportfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
